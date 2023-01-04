@@ -1,0 +1,22 @@
+.top-btn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: .8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 3px solid var(--blue);
+    background-color: transparent;
+    border-radius: 50%;
+    color: var(--blue);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.top-btn:hover{
+    background-color: var(--blue);
+    color: var(--darkGrey);
+    transition: all .3s;
+    cursor: pointer;
+
+}

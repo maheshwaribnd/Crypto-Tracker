@@ -1,0 +1,130 @@
+.grid-container{
+    width: 300px;
+    height: auto;
+    border-radius: 1.5rem;
+    border: 3px solid var(--darkGrey);
+    background-color: var(--darkGrey);
+    box-shadow: 4px 6px 12px var(--black);
+    cursor: pointer;
+    padding: 2rem;
+}
+.grid-container:hover{
+    border-color: var(--green);
+    transition: all .4s ease-in-out;
+    transform: translateY(-15px);
+}
+.grid-container-red:hover{
+    border-color: var(--red);
+    transition: all .4s ease-in-out;
+    transform: translateY(-15px);
+}
+a{
+    color: var(--white);
+}
+
+.info-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+.grid-first-row{
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.coin-img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.middle-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .20rem;
+}
+.coin-symbol{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.coin-name{
+    margin-top: .5rem;
+    color: var(--grey);
+    margin: 0;
+}
+.watch-icon{
+    color: var(--green);
+    font-size: 2.3rem !important;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    padding: .5rem;
+}
+.watch-icon:hover{
+    transition: all .3s;
+    border: 2px solid var(--green);
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.watch-icon-red{
+    color: var(--red);
+    font-size: 2rem !important;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    padding: .5rem;
+}
+.watch-icon-red:hover{
+    transition: all .3s;
+    border: 2px solid var(--red);
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.percent, .trending-icon{
+    padding: .5rem .9rem;
+    border: 2px solid var(--green);
+    border-radius: 3rem;
+    font-weight: 600;
+    color: var(--green);
+}
+.trending-icon{
+    padding: .5rem;
+}
+
+.percent:hover,
+.trending-icon:hover{
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 500;
+    transition: all .4s;
+}
+ 
+.red{
+    color: var(--red);
+    border-color: var(--red);
+}
+.red:hover{
+    background-color: var(--red);
+}
+
+.coin-price{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--green);
+}
+.coin-price-red{
+    color: var(--red);
+}
+
+.coin-name{
+    font-weight: 600;
+    color: var(--grey);
+}

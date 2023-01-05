@@ -6,7 +6,7 @@ import SearchComponent from "../Components/Dashboard/Search/search";
 import Loader from "../Components/Common/Loader/loader";
 import BackToTop from "../Components/Common/BackToTop/backToTop";
 import PaginationComponent from "../Components/Dashboard/Pagination/pagination";
-import Footer from "../Components/Common/Footer/footer";
+import Footer from "../Components/Common/Footer/Footer";
 
 const DashboardPage = () => {
   const [coins, setCoins] = useState([]);

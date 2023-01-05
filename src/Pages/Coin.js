@@ -4,7 +4,7 @@ import Loader from "../Components/Common/Loader/loader";
 import Header from "../Components/Common/Header/Header";
 import ListComponent from "../Components/Dashboard/List/list";
 import CoinInfo from "../Components/Coin/CoinInfo/info";
-import Footer from "../Components/Common/Footer/footer";
+import Footer from "../Components/Common/Footer/Footer";
 import SelectDays from "../Components/Coin/SelectDays/selectDays";
 import LineChart from "../Components/Coin/LineChart/lineChart";
 import { CoinObject } from "../Functions/coinObject";

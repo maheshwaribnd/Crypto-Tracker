@@ -5,7 +5,7 @@ import Header from '../Components/Common/Header/Header';
 import Button from "../Components/Common/Button/button";
 import TabsComponent from '../Components/Dashboard/Tabs/tabs';
 import { get100Coins } from '../Functions/get100Coins';
-import Footer from '../Components/Common/Footer/footer';
+import Footer from '../Components/Common/Footer/Footer';
 
 const WatchlistPage = () => {
 

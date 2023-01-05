@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Loader from "../Components/Common/Loader/loader";
 import Header from '../Components/Common/Header/Header';
-import Footer from '../Components/Common/Footer/footer';
+// import Footer from '../Components/Common/Footer/footer';
 import Button from "../Components/Common/Button/button";
 import TabsComponent from '../Components/Dashboard/Tabs/tabs';
 import { get100Coins } from '../Functions/get100Coins';
+import Footer from '../Components/Common/Footer/footer';
 
 const WatchlistPage = () => {
 

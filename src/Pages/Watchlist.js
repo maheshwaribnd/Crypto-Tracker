@@ -53,7 +53,9 @@ const WatchlistPage = () => {
               <div style={{ marginTop: "7rem" }}>
                 <TabsComponent coins={myWatchlist} isWatchlistPage={true} />
               </div>
+              <div style={{marginTop: "6rem"}}>
               <Footer />
+              </div>
             </>
           )}
 

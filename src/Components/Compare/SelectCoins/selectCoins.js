@@ -55,7 +55,9 @@ export default function SelectCoins({ allCoins, coin1, coin2, days, handleCoinCh
                     </Select>
             </FormControl>
 
+            <div style={{marginTop: "3.4rem"}}>
             <SelectDays days={days} handleDaysChange={(e) => handleDaysChange} noText={true} />
+            </div>
         </div>
     );
 }

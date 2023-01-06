@@ -4,7 +4,7 @@
     margin-left: 4rem;
     gap: 2rem;
 }
-/* .select-coin{
-    display: flex;
-    justify-content: space-between;
-} */
+.select-coin{
+  width: 8rem;
+  text-align: center;
+}

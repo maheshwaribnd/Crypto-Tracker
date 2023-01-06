@@ -27,7 +27,7 @@ const CoinPage = () => {
   const handleDaysChange = async (event) => {
     setLoader(true)
     setDays(event.target.value);
-    const prices = await GetCoinPrices(id, event.target.value);
+    const prices = await GetCoinPrices(id, event.target.value, priceType);
     if (prices) {
       SettingChartData(setChartData, prices, coin)
     };
@@ -38,7 +38,7 @@ const CoinPage = () => {
     setLoader(true)
     setPriceType(event.target.value);
     const prices = await GetCoinPrices(id, days, priceType);
-    console.log(prices)
+    // console.log(prices)
     if (prices) {
       SettingChartData(setChartData, prices, coin)
     };
@@ -55,8 +55,8 @@ const CoinPage = () => {
     const data = await GetCoinData(id);
     if (data) {
       CoinObject(setCoin, data)   // coinObject function is used for passed data into the List.
-      const prices = await GetCoinPrices(id, days, "prices");
-      SettingChartData(setChartData, data, prices)
+      const prices = await GetCoinPrices(id, days, priceType);
+      SettingChartData(setChartData, prices, data)
       setLoader(false);
     }
   }

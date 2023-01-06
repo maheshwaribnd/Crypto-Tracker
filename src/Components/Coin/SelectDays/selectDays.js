@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
-const SelectDays = ({ days, handleDaysChange }) => {
+const SelectDays = ({ days, handleDaysChange, noText }) => {
 
   const selectStyle = {
     height: "2.5rem",
@@ -25,6 +25,7 @@ const SelectDays = ({ days, handleDaysChange }) => {
       <p>Price Change in</p>
       <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
         <InputLabel id="demo-select-small"></InputLabel>
+        {!noText && <p>Price Change in </p>}
         <Select
           value={days}
           onChange={handleDaysChange}

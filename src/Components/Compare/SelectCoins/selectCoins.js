@@ -3,10 +3,7 @@ import "./style.css";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 import SelectDays from '../../Coin/SelectDays/selectDays'
 
-export default function SelectCoins({ allCoins }) {
-
-    const [coin1, setCoin1] = useState("bitcoin");
-    const [coin2, setCoin2] = useState("bitcoin");
+export default function SelectCoins({ allCoins, coin1, coin2, days, handleCoinChange, handleDaysChange }) {
 
     const selectStyle = {
         height: "2.5rem",
@@ -25,42 +22,40 @@ export default function SelectCoins({ allCoins }) {
     };
 
     return (
-        <div className="select-coin">
+        <div className="select-flex">
             <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
                 <InputLabel id="demo-select-small"></InputLabel>
-                <div className="head-text">
-                    <p>Select Coin1</p>
+                    <p>Crypto 1</p>
                     <Select
-                        //   value={allCoins}
-                        onChange={(e) => setCoin1(e.target.value)}
+                        className='select-coin'
+                        value={coin1}
+                        onChange={(e) => handleCoinChange(e, true)}
                         sx={selectStyle}
                     >
-                        {allCoins.map((coin, idx) => (
+                        {allCoins.filter((coin) => coin.id != coin2).map((coin, idx) => (
                             <MenuItem key={idx} value={coin.id} > {coin.name} </MenuItem>
                         ))}
 
                     </Select>
-                </div>
             </FormControl>
 
             <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
                 <InputLabel id="demo-select-small"></InputLabel>
-                <div className="head-text">
-                    <p>Select Coin2</p>
+                    <p>Crypto 2</p>
                     <Select
-                        //   value={allCoins}
-                        onChange={(e) => setCoin1(e.target.value)}
+                        className='select-coin'
+                        value={coin2}
+                        onChange={(e) => handleCoinChange(e, false)}
                         sx={selectStyle}
                     >
-                        {allCoins.map((coin, idx) => (
+                        {allCoins.filter((coin) => coin.id != coin1).map((coin, idx) => (
                             <MenuItem key={idx} value={coin.id} > {coin.name} </MenuItem>
                         ))}
 
                     </Select>
-                </div>
             </FormControl>
 
-            <SelectDays />
+            <SelectDays days={days} handleDaysChange={(e) => handleDaysChange} noText={true} />
         </div>
     );
 }

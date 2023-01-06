@@ -7,7 +7,7 @@ import CoinInfo from "../Components/Coin/CoinInfo/info";
 import Footer from "../Components/Common/Footer/Footer";
 import SelectDays from "../Components/Coin/SelectDays/selectDays";
 import LineChart from "../Components/Coin/LineChart/lineChart";
-import { CoinObject } from "../Functions/coinObject";
+import CoinObject from "../Functions/coinObject";
 import GetCoinData from '../Functions/getCoinData';
 import SettingChartData from '../Functions/settingChartData';
 import { GetCoinPrices } from "../Functions/getCoinPrices";

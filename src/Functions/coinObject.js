@@ -1,4 +1,4 @@
-export const CoinObject = (setState, data) => {
+export default function CoinObject (setState, data) {
   setState({
     id: data.id,
     name: data.name,

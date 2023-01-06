@@ -43,4 +43,4 @@ const PriceToggle = ({priceType, handlePriceTypeChange}) => {
     );
 }
 
-export default PriceToggle
+export default PriceToggle;

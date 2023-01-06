@@ -7,6 +7,7 @@ import Loader from "../Components/Common/Loader/loader";
 import BackToTop from "../Components/Common/BackToTop/backToTop";
 import PaginationComponent from "../Components/Dashboard/Pagination/pagination";
 import Footer from "../Components/Common/Footer/Footer";
+import { get100Coins } from "../Functions/get100Coins";
 
 const DashboardPage = () => {
   const [coins, setCoins] = useState([]);
@@ -37,7 +38,7 @@ const DashboardPage = () => {
     GetData();
   }, []);
 
-  const GetData = () => {
+  const GetData = async () => {
     // axios.get("https://api.coingecko.com/api/v3/coins/markets? vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false")
     //     .then((response) => {
     //     console.log(response)
@@ -49,23 +50,29 @@ const DashboardPage = () => {
     //     console.log(error);
     // })
     setLoader(true)
-    var config = {
-      method: "get",
-      url: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=99&page=1&sparkline=false",
-      headers: {}
-    };
+    const data = await get100Coins();
+    if(data){
+      setCoins(data);
+      setPaginatedCoins(data.slice(0, 9));
+      setLoader(false);
+    }
+    // var config = {
+    //   method: "get",
+    //   url: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=99&page=1&sparkline=false",
+    //   headers: {}
+    // };
 
-    axios(config)
-      .then(function (response) {
-        console.log(JSON.stringify(response.data));
-        setCoins(response.data)
-        setPaginatedCoins(response.data.slice(0, 9))
-        setLoader(false)
-      })
-      .catch(function (error) {
-        console.log(error);
-        setLoader(false)
-      });
+    // axios(config)
+    //   .then(function (response) {
+    //     console.log(JSON.stringify(response.data));
+    //     setCoins(response.data)
+    //     setPaginatedCoins(response.data.slice(0, 9))
+    //     setLoader(false)
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //     setLoader(false)
+    //   });
   };
 
   return (

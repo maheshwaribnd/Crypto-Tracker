@@ -1,0 +1,10 @@
+.select-coin{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+/* .head-text{
+    display: flex;
+    justify-content: space-between;
+} */

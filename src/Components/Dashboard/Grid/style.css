@@ -92,7 +92,6 @@ a{
     padding: .5rem .9rem;
     border: 2px solid var(--green);
     border-radius: 3rem;
-    font-weight: 600;
     color: var(--green);
 }
 .trending-icon{
@@ -117,7 +116,6 @@ a{
 
 .coin-price{
     font-size: 1.2rem;
-    font-weight: 600;
     color: var(--green);
 }
 .coin-price-red{

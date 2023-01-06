@@ -1,4 +1,3 @@
-import { minHeight } from '@mui/system';
 import React from 'react'
 import Header from '../Components/Common/Header/Header'
 import LandingPage from '../Components/LandingPage/Intro/Landingpage'

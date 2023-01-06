@@ -29,7 +29,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: .4rem;
-    padding-top: 0.8rem;
+    /* padding-top: 0.8rem; */
 }
 
 .coin-price {
@@ -44,19 +44,17 @@
 
 .mobile-price, .mobile-cap {
     display: none;
+    /* font-weight: 300; */
 }
 
 @media only screen and (max-width: 2100px) {
     
-    .trending-icon{
-        padding: .5rem
+    .percent, .trending-icon{
+        padding: .3rem .4rem;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    .list-container{
-        width: 100%;
-    }
     .desktop-price{
         font-size: 1.3rem;
     }
@@ -66,7 +64,6 @@
     .td-market-cap{
         display: none !important;
     }
-    .percent,
     .trending-icon,
     .td-info-flex {
         font-size: 1.3rem; 
@@ -76,18 +73,19 @@
     }
     .mobile-cap{
         display: none !important;
+        /* font-weight: 300; */
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    .list-container {
-        width: 100%;
+    .td-img {
+        width: 4rem !important;
     }
     .watch-icon{
         font-size: 2rem !important;
     }
-    .td-info-flex,.info-flex-percent{
-        font-size: 1.2rem; 
+    .td-info-flex{
+        font-size: 1.1rem; 
     }
     .desktop-price{
         font-size: 1.3rem;
@@ -100,14 +98,11 @@
     }
 }
 @media only screen and (max-width: 1100px) {
-    .td-info-flex{
-        font-size: 1.1rem; 
-    }
     .info-flex-percent{
         font-size: 1.1rem; 
     }
     .desktop-price{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .td-market-cap-2, .trend{
         display: none !important;
@@ -115,6 +110,7 @@
     .mobile-cap{
         display: block !important;
         font-size: 1.3rem;
+        /* font-weight: 300; */
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -132,6 +128,7 @@
     }
     .desktop-price{
         display: none;
+        /* font-size: 1.2rem; */
     }
     .td-info-flex{
         font-size: 1rem;
@@ -147,7 +144,7 @@
 }
 @media only screen and (max-width: 700px) {
     .list-container {
-        width: 100%;
+        padding-left: 0;
     }
     .list-img{
         height: 2.5rem;
@@ -156,12 +153,12 @@
     .td-info-flex{
         font-size: .9rem;
     }
-    .mobile-price{
-        font-size: 1.1rem;
-    }
     .percent,.percent-red{
-        width: 3.2.4rem !important;
         font-size: 1rem;
         padding: 2px 7px;
     }
+    .mobile-cap{
+        font-size: 1.2rem;
+    }
+    
 }

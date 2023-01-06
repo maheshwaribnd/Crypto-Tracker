@@ -75,7 +75,7 @@ const CoinPage = () => {
             <div className="info-wrapper">
               <SelectDays days={days} handleDaysChange={handleDaysChange} />
               <PriceToggle handlePriceTypeChange={handlePriceTypeChange} priceType={priceType} />
-              <LineChart chartData={chartData} />
+              <LineChart chartData={chartData} priceType={priceType} />
             </div>
             <CoinInfo name={coin.name} desc={coin.desc} />
             <Footer />

@@ -1,8 +1,8 @@
 .select-flex{
     display: flex;
     justify-content: flex-start;
-    margin-left: 3rem;
-    /* margin-right: 5rem; */
+    margin-left: 4rem;
+    gap: 2rem;
 }
 /* .select-coin{
     display: flex;

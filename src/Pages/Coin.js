@@ -29,7 +29,7 @@ const CoinPage = () => {
     setDays(event.target.value);
     const prices = await GetCoinPrices(id, event.target.value);
     if (prices) {
-      SettingChartData(setChartData, coin, prices)
+      SettingChartData(setChartData, prices, coin)
     };
     setLoader(false);
   }
@@ -40,7 +40,7 @@ const CoinPage = () => {
     const prices = await GetCoinPrices(id, days, priceType);
     console.log(prices)
     if (prices) {
-      SettingChartData(setChartData, coin, prices)
+      SettingChartData(setChartData, prices, coin)
     };
     setLoader(false);
   };

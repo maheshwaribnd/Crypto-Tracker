@@ -50,8 +50,8 @@ function App() {
 
   return (
     <>
-      {/* <div className="cursor" id="cursor" />
-      <div className="cursor-pointer" id="cursor-pointer" /> */}
+      <div className="cursor" id="cursor" />
+      <div className="cursor-pointer" id="cursor-pointer" />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />

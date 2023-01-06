@@ -70,13 +70,13 @@ a:link{
         display: block;
     }
     .mobile-drawer{
-        width: 40vw;
+        width: 35vw;
         height: 100vh;
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
         background-color: #0e1e36;
+        border: 1px solid #0e1e36;
     }
 }
 @media only screen and (max-width: 1000px) {

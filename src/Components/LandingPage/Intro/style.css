@@ -135,6 +135,9 @@ body{
     .btn-flex {
         justify-content: center;
     }
+    .iphone, .gradient{
+       margin-left: 1rem;
+    }
 }
 @media only screen and (max-width: 550px) {
     .landing-wrapper {

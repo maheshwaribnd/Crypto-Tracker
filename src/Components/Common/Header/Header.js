@@ -6,8 +6,6 @@ import "./style.css";
 
 function Header() {
 
-  const [darkMode, setDarkMode] = useState(true);
-
   return (
     <div className="header">
       <a href="/">

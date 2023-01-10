@@ -44,16 +44,34 @@ a:link{
     margin-right: 3rem;
     font-weight: bold;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
     .header h1{
         font-size: 1.8rem;
-        margin-left: 3rem;
-        margin-right: 4rem;
-        margin-bottom: 3rem;
+    }
+    .links-flex{
+        margin-right: 1.5rem;
     }
     a:link{
         display: flex;
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
+        font-size: .9rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .links-flex{
+        margin-right: .5rem;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .header h1{
+        font-size: 2rem;
+    }
+    .links-flex{
+        display: flex;
+        justify-content: flex-end;
+    }
+    a:link{
+        display: flex;
         font-size: .9rem;
     }
 }
@@ -91,15 +109,12 @@ a:link{
         margin: auto;
     }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 520px) {
     .header h1{
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-        margin-left: 1.2rem;
-        margin-right: 3rem;
-    }
-    .drawer-wrapper{
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        display: block;
+        text-align: center;
+        padding-bottom: .5rem;
     }
 }
 

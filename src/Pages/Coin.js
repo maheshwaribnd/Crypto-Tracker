@@ -17,7 +17,7 @@ const CoinPage = () => {
   const { id } = useParams();
   const [coin, setCoin] = useState();
   const [loader, setLoader] = useState(false);
-  const [days, setDays] = useState(30);
+  const [days, setDays] = useState(120);
   const [priceType, setPriceType] = useState("market_caps")
   const [chartData, setChartData] = useState({
     labels: [],

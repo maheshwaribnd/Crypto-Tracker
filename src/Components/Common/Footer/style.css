@@ -2,11 +2,17 @@
     padding: 7rem 1.5rem 2rem 1.5rem;
     background-color: transparent;
 }
-
+.left a{
+    margin-top: .5rem;
+}
 .left {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+.social-item {
+    display: flex;
+    margin-top: .5rem;
 }
 
 .social-item img{
@@ -49,36 +55,55 @@
 
 @media only screen and (max-width: 1050px) {
     .footer {
-        width: 75%;
-    }
-    .left a {
-        padding-top: 2rem;
+        width: 90%;
     }
     .social-item {
         display: flex;
-        padding-top: 1.8rem;
+        /* align-items: center; */
     }
 }
 
 @media only screen and (max-width: 800px) {
     .footer-wrap {
         margin-top: 15rem;
+        display: flex;
+    }
+    .left a{
+        /* margin-bottom: 2rem; */
+    }
+    .social-item img{
+        /* margin-bottom: 1rem; */
     }
 }
 @media only screen and (max-width: 700px) {
-    .footer {
-        width: 85%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .footer-wrap{
+        display: flex;
     }
-    .social-item img{
-        gap: 0;
-    }
-}
-@media only screen and (max-width: 600px) {
     .footer {
         width: 95%;
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .left a{
+        /* margin-bottom: 2rem; */
+    }
+    .social-item img{
+        /* margin-bottom: 1rem; */
+        gap: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footer-wrap{
+        display: flex;
+    }
+    .footer {
+        width: 100%;
+    }
+    .social-item img{
+        /* margin-bottom: .9rem; */
+    }
+    .left a{
+        display: none;
     }
 }

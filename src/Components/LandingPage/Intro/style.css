@@ -90,6 +90,9 @@ body{
     }
 }
 @media only screen and (max-width: 1000px) {
+    .landing-wrapper{
+        min-height: auto;
+    }
     .landing-left{
         width: 60%;
     }
@@ -141,7 +144,6 @@ body{
 }
 @media only screen and (max-width: 550px) {
     .landing-wrapper {
-        height: 120vh;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -165,7 +167,7 @@ body{
     .btn-flex {
         margin-inline: auto;
         flex-direction: column;
-        width: 60%;
+        width: 50%;
         justify-content: center;
     }
 }
